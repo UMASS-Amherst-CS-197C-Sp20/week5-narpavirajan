@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+extern int globalInt;
 enum flag {CHAR='C',INT='I',FLOAT='F'};
 
 union value{
@@ -16,3 +16,4 @@ typedef struct{
 void print(parserValue input);
 
 int read(FILE * inputFile, parserValue * inputPTR);
+char intToChar(int input);
