@@ -1,7 +1,14 @@
 //Questions 1-3 are not in this file. See readme.txt
+#include<stdio.h>
+#include "dependencies.h"
 
+struct dog {
+   int   age;
+   char* name;
+};
 //Question 3 part 2. 
 //Set 'globalInt' to be equal to 37
+globalInt=37;
 
 int charToInt(char input){
 	int output = intToChar(input);
@@ -10,7 +17,11 @@ int charToInt(char input){
 
 //Question 4
 //define the 'intToChar' function. This function should add 5 to the int given, cast it to a char, and then return this char.
-
+char intToChar(int input){
+	int output =input+5;
+  output=(char)output;
+	return output;
+}
 //Question 5 is not in this file. See readme.txt
 
 //DO NOT ALTER, THIS IS FOR THE AUTOGRADER
